@@ -43,17 +43,7 @@ public class Hooks {
         DB_Util.createConnection();
     }
 
-    @After("@db")
-    public void closeDB(){
-        System.out.println("Closing DB connection...");
-        DB_Util.destroy();
-    }
-        DB_Util.createConnection();
-        System.out.println("connecting to database.....");
-
-    }
-
-    @After("@db")
+      @After("@db")
     public void destroyDB(){
         DB_Util.destroy();
         System.out.println("closing connection....");
