@@ -74,8 +74,8 @@ public class AddingBookStepDef_Mariya {
     }
     @Then("verify {string} message is displayed")
     public void verify_message_is_displayed(String message) {
-      /*  WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        wait.until(ExpectedConditions.visibilityOf(bookPage.toastMessage));*/
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.visibilityOf(bookPage.toastMessage));
        // BrowserUtil.waitFor(5);
         Assert.assertEquals(bookPage.toastMessage.getText(),message);
     }
