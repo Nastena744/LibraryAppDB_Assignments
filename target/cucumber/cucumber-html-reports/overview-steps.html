@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>08 Aug 2023, 16:27</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_choose_the_book_category(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="471196666">0.471</td>
+              <td class="duration" data-value="471196666">0.656</td>
+              <td class="duration" data-value="1413590000">1.413</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_click_to_add_book()</td>
+              <td>3</td>
+              <td class="duration" data-value="2073939333">2.073</td>
+              <td class="duration" data-value="2073939333">5.393</td>
+              <td class="duration" data-value="6221818000">6.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_click_to_save_changes()</td>
+              <td>3</td>
+              <td class="duration" data-value="256693666">0.256</td>
+              <td class="duration" data-value="256693666">0.508</td>
+              <td class="duration" data-value="770081000">0.770</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_enter_author(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="173478000">0.173</td>
+              <td class="duration" data-value="173478000">0.264</td>
+              <td class="duration" data-value="520434000">0.520</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_enter_book_name(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="419976000">0.419</td>
+              <td class="duration" data-value="419976000">0.743</td>
+              <td class="duration" data-value="1259928000">1.259</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_enter_isbn(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="890732000">0.890</td>
+              <td class="duration" data-value="890732000">2.460</td>
+              <td class="duration" data-value="2672196000">2.672</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_librarian_enter_year(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="131525000">0.131</td>
+              <td class="duration" data-value="131525000">0.222</td>
+              <td class="duration" data-value="394575000">0.394</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_on_the_home_page(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="22725636666">22.725</td>
+              <td class="duration" data-value="22725636666">53.568</td>
+              <td class="duration" data-value="68176910000">1:8.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.the_user_navigates_to_page(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="8391079000">8.391</td>
+              <td class="duration" data-value="8391079000">18.346</td>
+              <td class="duration" data-value="25173237000">25.173</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.verify_information_must_match_with_db(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="624403000">0.624</td>
+              <td class="duration" data-value="624403000">0.976</td>
+              <td class="duration" data-value="1873209000">1.873</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.AddingBookStepDef_Mariya.verify_message_is_displayed(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="245202666">0.245</td>
+              <td class="duration" data-value="245202666">0.382</td>
+              <td class="duration" data-value="735608000">0.735</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.Hooks.destroyDB()</td>
+              <td>3</td>
+              <td class="duration" data-value="146333">0.000</td>
+              <td class="duration" data-value="146333">0.000</td>
+              <td class="duration" data-value="439000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.Hooks.setUp()</td>
+              <td>3</td>
+              <td class="duration" data-value="36738726333">36.738</td>
+              <td class="duration" data-value="36738726333">1:23.312</td>
+              <td class="duration" data-value="110216179000">1:50.216</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.Hooks.setupDB()</td>
+              <td>3</td>
+              <td class="duration" data-value="460685333">0.460</td>
+              <td class="duration" data-value="460685333">0.810</td>
+              <td class="duration" data-value="1382056000">1.382</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="827689666">0.827</td>
+              <td class="duration" data-value="827689666">1.561</td>
+              <td class="duration" data-value="2483069000">2.483</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>45</td>
+            <td class="duration">4.962</td>
+            <td class="duration">1:50.216</td>
+            <td class="duration">3:43.293</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
