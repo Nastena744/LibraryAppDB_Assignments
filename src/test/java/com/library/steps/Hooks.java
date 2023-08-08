@@ -38,6 +38,7 @@ public class Hooks {
 
     @Before("@db")
     public void setupDB(){
+
         System.out.println("Connecting to database...");
         DB_Util.createConnection();
     }
@@ -47,6 +48,19 @@ public class Hooks {
         System.out.println("Closing DB connection...");
         DB_Util.destroy();
     }
+        DB_Util.createConnection();
+        System.out.println("connecting to database.....");
+
+    }
+
+    @After("@db")
+    public void destroyDB(){
+        DB_Util.destroy();
+        System.out.println("closing connection....");
+
+    }
+
+
 
 
 
