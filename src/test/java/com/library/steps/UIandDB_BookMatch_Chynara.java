@@ -3,9 +3,7 @@ package com.library.steps;
 import com.library.pages.BookPage;
 import com.library.pages.DashBoardPage;
 import com.library.pages.LoginPage;
-import com.library.utility.BrowserUtil;
 import com.library.utility.DB_Util;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -15,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UIandDB_Match_Chynara {
+public class UIandDB_BookMatch_Chynara {
     String bookName;
     String actualDescription;
     BookPage bookPage=new BookPage();
