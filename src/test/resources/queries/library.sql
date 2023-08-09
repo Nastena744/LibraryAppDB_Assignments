@@ -8,6 +8,8 @@ select bc.name, count(*) from book_borrow bb
 group by name
 order by 2 desc;
 
+select name from book_categories;
+
 
 
 
