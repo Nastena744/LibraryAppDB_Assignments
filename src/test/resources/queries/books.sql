@@ -3,6 +3,8 @@ from books b
 join book_categories bc on b.book_category_id = bc.id
 where b.name = 'Clean Code'
 order by b.id desc;
+-- us04/Rasha
+select * from books where name='Agile Testing';
 
 
 -- US06 FATIMA
