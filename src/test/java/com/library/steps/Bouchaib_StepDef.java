@@ -3,6 +3,7 @@ package com.library.steps;
 import com.library.pages.BookPage;
 import com.library.utility.BrowserUtil;
 import com.library.utility.DB_Util;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -12,10 +13,13 @@ import java.util.List;
 public class Bouchaib_StepDef {
     BookPage bookPage= new BookPage();
     List<String> actualCategory;
-    @When("the user navigates to {string} page")
+
+
+
+
+   @Given("the user navigates to {string} the page")
     public void the_user_navigates_to_page(String moduleName) {
-        String Books;
-        bookPage.navigateModule(moduleName);
+       bookPage.navigateModule(moduleName);
         BrowserUtil.waitFor(2);
 
     }
