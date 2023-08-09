@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>08 Aug 2023, 16:27</td>
+      <td>09 Aug 2023, 14:08</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@db</td>
-          <td      class="passed"    >33</td>
+          <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">33</td>
+          <td class="total">5</td>
 
-          <td  class="passed"    >3</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
 
-          <td class="duration" data-value="109211586000">1:49.211</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1892306500">1.892</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,25 +171,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2840566879.html">Books module</a>
+      <a href="report-feature_2160508509.html">As a data consumer, I want UI and DB book information are match.</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_2210186593.html">@us04</a>
        <a href="report-tag_2147548349.html">@db</a>
 </div>
 
 
-  <span class="lead-duration duration">1:23.523</span>
+  <span class="lead-duration duration">1.892</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify added book is matching with DB</span>
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify book information with DB</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -198,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -218,9 +218,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">com.library.steps.Hooks.setUp()</span>
+              <span class="location name">com.library.steps.Hooks.setupDB()</span>
 
-  <span class="lead-duration duration">1:23.312</span>
+  <span class="lead-duration duration">0.337</span>
 
           </div>
 
@@ -234,9 +234,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">com.library.steps.Hooks.setupDB()</span>
+              <span class="location name">com.library.steps.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">0.810</span>
+  <span class="lead-duration duration">1.704</span>
 
           </div>
 
@@ -253,9 +253,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -265,7 +265,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -273,7 +273,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
 
-  <span class="lead-duration duration">53.568</span>
+  <span class="lead-duration duration">0.239</span>
 
 </div>
 
@@ -300,7 +300,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
 
-  <span class="lead-duration duration">18.346</span>
+  <span class="lead-duration duration">0.368</span>
 
 </div>
 
@@ -325,63 +325,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the librarian click to add book</span>
+  <span class="name">the user searches for <span class="argument">&quot;Clean Code&quot;</span> book</span>
 
-  <span class="lead-duration duration">5.393</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian enter book name <span class="argument">&quot;Clean Code&quot;</span></span>
-
-  <span class="lead-duration duration">0.743</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian enter ISBN <span class="argument">&quot;09112021&quot;</span></span>
-
-  <span class="lead-duration duration">2.460</span>
+  <span class="lead-duration duration">0.180</span>
 
 </div>
 
@@ -406,36 +352,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">the librarian enter year <span class="argument">&quot;2021&quot;</span></span>
+  <span class="name">the user clicks edit book button</span>
 
-  <span class="lead-duration duration">0.222</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian enter author <span class="argument">&quot;Robert C.Martin&quot;</span></span>
-
-  <span class="lead-duration duration">0.264</span>
+  <span class="lead-duration duration">0.536</span>
 
 </div>
 
@@ -458,65 +377,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian choose the book category <span class="argument">&quot;Drama&quot;</span></span>
-
-  <span class="lead-duration duration">0.656</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian click to save changes</span>
-
-  <span class="lead-duration duration">0.508</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify <span class="argument">&quot;The book has been created.&quot;</span> message is displayed</span>
+  <span class="name">book information must match the Database</span>
 
-  <span class="lead-duration duration">0.382</span>
+  <span class="lead-duration duration">0.566</span>
 
 </div>
 
@@ -525,32 +390,23 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
       </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify <span class="argument">&quot;Clean Code&quot;</span> information must match with DB</span>
-
-  <span class="lead-duration duration">0.976</span>
-
-</div>
-
-
-
-
-
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected:&lt;[Clean Code, 09112021, 2021, Robert C.Martin, Fantasy, ]&gt; but was:&lt;[Clean Code, 999239923, 2021, Robert C.Martin, Fantasy, ]&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.library.steps.UIandDB_Match_Chynara.book_information_must_match_the_database(UIandDB_Match_Chynara.java:74)
+	at &#10045;.book information must match the Database(file:///C:/Users/Programming/IdeaProjects/LibraryAppDB_Assignmentss/src/test/resources/features/us04.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -570,7 +426,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -582,13 +438,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.library.steps.Hooks.destroyDB()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -604,7 +460,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.561</span>
+  <span class="lead-duration duration">0.336</span>
 
           </div>
 
@@ -613,914 +469,21 @@ $(document).ready(function() {
 
 
 
-
-        </div>
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_859862819.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_859862819.png">
+      </div>
     </div>
   </div>
-
   </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2840566879.html">Books module</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_4089311534.html">@smoke</a>
-       <a href="report-tag_2147548349.html">@db</a>
-</div>
-
-
-  <span class="lead-duration duration">4.277</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify added book is matching with DB</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-5" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-6" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.library.steps.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">13.688</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.library.steps.Hooks.setupDB()</span>
-
-  <span class="lead-duration duration">0.273</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
-
-  <span class="lead-duration duration">0.816</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
-
-  <span class="lead-duration duration">1.278</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian click to add book</span>
-
-  <span class="lead-duration duration">0.408</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian enter book name <span class="argument">&quot;Head First Java&quot;</span></span>
-
-  <span class="lead-duration duration">0.215</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian enter ISBN <span class="argument">&quot;10112021&quot;</span></span>
-
-  <span class="lead-duration duration">0.093</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian enter year <span class="argument">&quot;2021&quot;</span></span>
-
-  <span class="lead-duration duration">0.076</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian enter author <span class="argument">&quot;Kathy Sierra&quot;</span></span>
-
-  <span class="lead-duration duration">0.151</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian choose the book category <span class="argument">&quot;Action and Adventure&quot;</span></span>
-
-  <span class="lead-duration duration">0.498</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian click to save changes</span>
-
-  <span class="lead-duration duration">0.161</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify <span class="argument">&quot;The book has been created.&quot;</span> message is displayed</span>
-
-  <span class="lead-duration duration">0.137</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify <span class="argument">&quot;Head First Java&quot;</span> information must match with DB</span>
-
-  <span class="lead-duration duration">0.438</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-8" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.destroyDB()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.099</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_2840566879.html">Books module</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_4089311534.html">@smoke</a>
-       <a href="report-tag_2147548349.html">@db</a>
-</div>
-
-
-  <span class="lead-duration duration">21.411</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify added book is matching with DB</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-9" class="collapse collapsable-details ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-10" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.library.steps.Hooks.setUp()</span>
-
-  <span class="lead-duration duration">13.215</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.library.steps.Hooks.setupDB()</span>
-
-  <span class="lead-duration duration">0.297</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
-
-  <span class="lead-duration duration">13.791</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
-
-  <span class="lead-duration duration">5.547</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian click to add book</span>
-
-  <span class="lead-duration duration">0.420</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian enter book name <span class="argument">&quot;The Scrum Field Guide&quot;</span></span>
-
-  <span class="lead-duration duration">0.301</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian enter ISBN <span class="argument">&quot;11112021&quot;</span></span>
-
-  <span class="lead-duration duration">0.118</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian enter year <span class="argument">&quot;2006&quot;</span></span>
-
-  <span class="lead-duration duration">0.095</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the librarian enter author <span class="argument">&quot;Mitch Lacey&quot;</span></span>
-
-  <span class="lead-duration duration">0.104</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian choose the book category <span class="argument">&quot;Short Story&quot;</span></span>
-
-  <span class="lead-duration duration">0.258</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the librarian click to save changes</span>
-
-  <span class="lead-duration duration">0.099</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify <span class="argument">&quot;The book has been created.&quot;</span> message is displayed</span>
-
-  <span class="lead-duration duration">0.215</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">verify <span class="argument">&quot;The Scrum Field Guide&quot;</span> information must match with DB</span>
-
-  <span class="lead-duration duration">0.458</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-12" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.destroyDB()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.822</span>
-
-          </div>
-
-
-
-
-
-
 
         </div>
     </div>
