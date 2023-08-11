@@ -14,7 +14,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class UIandDB_BookMatch_Chynara {
-    String bookName;
+    static String bookName;
+    //made String bookName static - can not reach it in BooksModule_StepDefs
+    //without making it static.
+    //~kirill
     String actualDescription;
     BookPage bookPage=new BookPage();
     LoginPage loginPage=new LoginPage();
@@ -66,6 +69,7 @@ public class UIandDB_BookMatch_Chynara {
         DB_Util.runQuery("select books.name,isbn,year,author,bb.name as \"genre\",books.description" +
                 " from books inner join book_categories bb on books.book_category_id = bb.id " +
                 "where books.name= " + "\'" + bookName + "\'and books.description= " + "\'" + actualDescription + "\'");
+            //add "and isbn = "+"\'"+isbn+"\'" to make it more dynamic ~kir
 
         List<String> expectedBookInfo = DB_Util.getRowDataAsList(1);
         System.out.println("expectedBookInfo = " + expectedBookInfo);
